@@ -15,23 +15,25 @@ html+=`</aside>`;
 
 html+=`<nav>`;
 html+=`<ul>`;
-html+=`<li>`;
-html+=`<a href="./pages/Informacion/infoProyecto.html">Información del proyecto</a>`;
-html+=`</li>`;
-html+=`<li>`;
-html+=`<a href="">Pedidos</a>`
-html+=`</li>`;
-html+=`<li>`;
-html+=`<a href="./pages/desarrolladores.html">Desarrolladores</a>`;
-html+=`</li>`;
-html+=`<li>`;
-html+=`<a href="">Proyectos</a>`;
-html+=`</li>`;
-html+=`<li>`;
-html+=`<a href="./pages/registro.html">Registro</a>`
-html+=`</li>`;
-html+=`<li>`;
-html+=`</li>`;
+let paginas = [`Informacion/infoProyecto.html`,`Acerca/acerca.html`,`Registro/registroUsuario.html` ]
+let paginasj = [
+    {url: "informacion/infoProyecto.html", descripcion:"InformaciOn del Proyecto" },
+    {url: "informacion/infoProyecto.html", descripcion:"InformaciOn del Proyecto" },
+    {url: "informacion/infoProyecto.html", descripcion:"InformaciOn del Proyecto" },
+]
+
+for (let elemento of paginasj)
+{
+    console.log(elemento.url)
+    console.log(elemento.descripcion)
+}
+
+for (let i=0; i<paginas.length;i++)
+{
+    html+=`<li>`;
+    html+=`<a href="./pages/${paginas[i]}">${i}</a>`;
+    html+=`</li>`;
+}
 html+=`</ul>`;
 html+=`</nav>`;
 
