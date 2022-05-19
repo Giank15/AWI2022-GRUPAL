@@ -19,6 +19,16 @@ html+=`<li>`;
 html+=`<a href="./pages/Informacion/infoProyecto.html">Información del proyecto</a>`;
 html+=`</li>`;
 html+=`<li>`;
+html+=`<a href="">Pedidos</a>`
+html+=`</li>`;
+html+=`<li>`;
+html+=`<a href="./pages/desarrolladores.html">Desarrolladores</a>`;
+html+=`</li>`;
+html+=`<li>`;
+html+=`<a href="">Proyectos</a>`;
+html+=`</li>`;
+html+=`<li>`;
+html+=`<a href="./pages/registro.html">Registro</a>`
 html+=`</li>`;
 html+=`<li>`;
 html+=`</li>`;
