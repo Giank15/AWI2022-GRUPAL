@@ -15,25 +15,22 @@ html+=`</aside>`;
 
 html+=`<nav>`;
 html+=`<ul>`;
-let paginas = [`Informacion/infoProyecto.html`,`Acerca/acerca.html`,`Registro/registroUsuario.html` ]
-let paginasj = [
-    {url: "informacion/infoProyecto.html", descripcion:"InformaciOn del Proyecto" },
-    {url: "informacion/infoProyecto.html", descripcion:"InformaciOn del Proyecto" },
-    {url: "informacion/infoProyecto.html", descripcion:"InformaciOn del Proyecto" },
+let paginas = [
+    {url: "Acceso/accesoUsuario.html", descripcion:"Iniciar Sesion" },
+    {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
+    {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
+    {url: "Adopcion/adopcion.html", descripcion:"Adopcion" },
+    {url: "Donaciones/donaciones.html", descripcion:"Donaciones" },
+    {url: "Noticias/noticias.html", descripcion:"Noticias" }
 ]
 
-for (let elemento of paginasj)
-{
-    console.log(elemento.url)
-    console.log(elemento.descripcion)
-}
-
-for (let i=0; i<paginas.length;i++)
+for (let elemento of paginas)
 {
     html+=`<li>`;
-    html+=`<a href="./pages/${paginas[i]}">${i}</a>`;
+    html+=`<a href="./pages/${elemento.url}">${elemento.descripcion}</a>`;
     html+=`</li>`;
 }
+
 html+=`</ul>`;
 html+=`</nav>`;
 
