@@ -18,8 +18,8 @@ html+=`</div>`;
 html+=`<nav class="nadvar" id="nadvar">`;
 html+=`<ul>`;
 let paginas = [
+    {url: "../index.html", descripcion:"Pagina Principal" },
     {url: "Acceso/accesoUsuario.html", descripcion:"Acceder" },
-    {url: "Administracion/administracion.html", descripcion:"Administracion" },
     {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
     {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
     {url: "Acerca/acerca.html", descripcion:"Acerca de" }

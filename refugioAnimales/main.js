@@ -19,7 +19,6 @@ html+=`<nav class="nadvar" id="nadvar">`;
 html+=`<ul>`;
 let paginas = [
     {url: "Acceso/accesoUsuario.html", descripcion:"Acceder" },
-    {url: "Administracion/administracion.html", descripcion:"Administracion" },
     {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
     {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
     {url: "Adopcion/adopcion.html", descripcion:"Adopcion" },

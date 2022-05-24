@@ -1,44 +1,47 @@
+.logo {
+    grid-area: logo;
+}
 .cabecera{
     grid-area: cabecera;
+    background-color: gray;
 }
 .izquierdo{
     grid-area: izquierdo;
+    background-color: gray;
 }
 #contenido{
     grid-area: contenido;
 }
 .pie{
     grid-area: pie;
-}
-
-.item{
-    border: 1px solid blue;
+    background-color: gray;
 }
 
 .contenedor > div {
-    background-color: burlywood;
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
 }
 .letracontenido{
     font-size: 20px;
 }
 .logo{
-    width: 200px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
 }
 
 .contenedor{
     display: grid;
     /*Cuantas filas y cuantas columnas (3 filas x 2 columnas */
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: 2fr 850px 1fr;
-    grid-template-areas: "cabecera cabecera"
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 2fr 500px 1fr;
+    grid-template-areas: "logo cabecera"
                          "izquierdo contenido"
                          "pie pie";
-    background-color: aqua;
     gap: 10px;    
     padding: 10px;
     height: 100vh;
-
+    margin: 0 auto;
+}
+.tabla1{
+    margin: 0 auto;
 }

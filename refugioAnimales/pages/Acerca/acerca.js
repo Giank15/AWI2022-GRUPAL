@@ -20,7 +20,6 @@ html+=`<nav class="nadvar" id="nadvar">`;
 html+=`<ul>`;
 let paginas = [
     {url: "../index.html", descripcion:"Pagina Principal" },
-    {url: "Administracion/administracion.html", descripcion:"Administracion" },
     {url: "Informacion/infoProyecto.html", descripcion:"Informacion" }
 ]
 for (let elemento of paginas)
