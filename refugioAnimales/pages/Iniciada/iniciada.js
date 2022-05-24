@@ -6,7 +6,7 @@ html+=`<header class="header">`;
 //Log de Header
 html+=`<div class="logo">`;
 html+=`<div class="imagen-logo">`;
-html+=`<img src="./images/logoperrito.png" alt="">`; 
+html+=`<img src="../../images/logoperrito.png" alt="">`; 
 html+=`</div>`;
 html+=`<div class="contenedor-letras-logo">`;
 html+=`<h1>Gigi Animal Shelter</h1>`;
@@ -18,17 +18,16 @@ html+=`</div>`;
 html+=`<nav class="nadvar" id="nadvar">`;
 html+=`<ul>`;
 let paginas = [
-    {url: "Acceso/accesoUsuario.html", descripcion:"Acceder" },
-    {url: "Administracion/administracion.html", descripcion:"Administracion" },
-    {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
+    {url: "Perfil/perfil.html", descripcion:"Mi Perfil" },
     {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
     {url: "Adopcion/adopcion.html", descripcion:"Adopcion" },
-    {url: "Acerca/acerca.html", descripcion:"Acerca de" }
+    {url: "Acerca/acerca.html", descripcion:"Acerca de" },
+    {url: "../index.html", descripcion:"Cerrar Sesion" }
 ]
 for (let elemento of paginas)
 {
     html+=`<li>`;
-    html+=`<a href="./pages/${elemento.url}">${elemento.descripcion}</a>`;
+    html+=`<a href="../${elemento.url}">${elemento.descripcion}</a>`;
     html+=`</li>`;
 }
 html+=`</ul>`;
@@ -42,12 +41,12 @@ html+=`</div>`;
 html+=`<div class="Contenido-multimedia">`;
 html+=`<h2>Contenido multimedia de nuestro refugio GiGi</h2>`;
 html+=`<div class="carrucel-imagenes">`;
-html+=`<div class="contenedor-magenes-carrucel"><img src="./images/ref1.jpg" alt=""></div>`;
-html+=`<div class="contenedor-magenes-carrucel"><img src="./images/red2.jpg" alt=""></div>`;
-html+=`<div class="contenedor-magenes-carrucel"><img src="./images/ref3.jpg" alt=""></div>`;
-html+=`<div class="contenedor-magenes-carrucel"><img src="./images/ref4.jpg" alt=""></div>`;
-html+=`<div class="contenedor-magenes-carrucel"><img src="./images/ref5.jpg" alt=""></div>`;
-html+=`<div class="contenedor-magenes-carrucel"><img src="./images/ref6.jpg" alt=""></div>`;
+html+=`<div class="contenedor-magenes-carrucel"><img src="../../images/ref1.jpg" alt=""></div>`;
+html+=`<div class="contenedor-magenes-carrucel"><img src="../../images/red2.jpg" alt=""></div>`;
+html+=`<div class="contenedor-magenes-carrucel"><img src="../../images/ref3.jpg" alt=""></div>`;
+html+=`<div class="contenedor-magenes-carrucel"><img src="../../images/ref4.jpg" alt=""></div>`;
+html+=`<div class="contenedor-magenes-carrucel"><img src="../../images/ref5.jpg" alt=""></div>`;
+html+=`<div class="contenedor-magenes-carrucel"><img src="../../images/ref6.jpg" alt=""></div>`;
 html+=`</div>`;
 html+=`</div>`;
 html+=`<section class="seccion-refugio">`;
@@ -65,10 +64,10 @@ html+=`<h2>Visión</h2>`;
 html+=`<div class="sub-parrafo"><p>Ser una organización autosustentable, reconocida como referente nacional en bienestar animal, responsable del cambio en la relación humano - animal en el Ecuador.</p>  </div>`;
 html+=`</div>`;
 html+=`<div class="sub-grid">`;
-html+=`<img src="./images/ref4.jpg" alt="">`;
+html+=`<img src="../../images/ref4.jpg" alt="">`;
 html+=`</div>`;
 html+=`<div class="sub-grid">`;
-html+=`<img src="./images/ref6.jpg" alt="">`;
+html+=`<img src="../../images/ref6.jpg" alt="">`;
 html+=`</div>`;
 html+=`</div>`;
 html+=`</section>`;

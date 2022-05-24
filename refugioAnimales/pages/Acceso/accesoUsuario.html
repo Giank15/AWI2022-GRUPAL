@@ -2,50 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../images/logoperrito.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iniciar Sesion</title>
     <link rel="stylesheet" href="./estilos.css">
 </head>
-<body>
-    <div class="contenedor">
-        
-        <div class="cabecera item">Cabecera <br>
-           
-            <h1>GiGi Animal Shelter</h1>
-            <h2>Rescate y adopción de animalitos</h2>
-        </div>
-
-
-        <div class="izquierdo item">Iniciar Sesion <br>
-            <form action="">
-                <label for="correoelectronico">Correo Electrónico</label>
-                <input type="email" id="correoelectronico">
+<body class="body">
     
-                <label for="contraseña">Contraseña</label>
-                <input type="password" id="contraseña">
+    <div id="app"></div>
+    <!-- BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     
-                <button>Acceder</button>
-                
-            </form>
-        </div>
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/530f126b4a.js" crossorigin="anonymous"></script>
 
-        <div class="contenido item">Contenido <br>
-            <img src="../images/logoperrito.png" alt="logo de la empresa">
-            <p class="letracontenido">
-                El tema de nuestro proyecto consiste en un aplicativo web de un refugio de animales en la que las personas podrán donar para aquellos animales que se encuentran
-                en un mal estado y necesitan para su tratamiento. Además tendrán la opción de poder adoptar a los animales desde el aplicativo.
-            </p>
-            <p class="letracontenido">
-                Por favor te invitamos a unirte a nuestro proyecto, registrate aquí para conocer más información 
-                de nosotros y lo que hacemos, además podrás adoptar a algún perrito a la que sientas la necesidad de ayudar 
-                y necesitar tu ayuda.
-            </p>
-        </div>
-
-        <div class="pie item">Pie
-
-        </div>
-    </div>
+    <!-- scrip index -->
+    <script type="module" src="./accesoUsuario.js"></script>
 </body>
 </html>

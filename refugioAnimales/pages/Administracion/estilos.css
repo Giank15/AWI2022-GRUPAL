@@ -1,0 +1,44 @@
+.cabecera{
+    grid-area: cabecera;
+}
+.izquierdo{
+    grid-area: izquierdo;
+}
+#contenido{
+    grid-area: contenido;
+}
+.pie{
+    grid-area: pie;
+}
+
+.item{
+    border: 1px solid blue;
+}
+
+.contenedor > div {
+    background-color: burlywood;
+    text-align: center;
+    font-size: 50px;
+}
+.letracontenido{
+    font-size: 20px;
+}
+.logo{
+    width: 200px;
+    height: 150px;
+}
+
+.contenedor{
+    display: grid;
+    /*Cuantas filas y cuantas columnas (3 filas x 2 columnas */
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 2fr 850px 1fr;
+    grid-template-areas: "cabecera cabecera"
+                         "izquierdo contenido"
+                         "pie pie";
+    background-color: aqua;
+    gap: 10px;    
+    padding: 10px;
+    height: 100vh;
+
+}

@@ -18,7 +18,7 @@ html+=`</div>`;
 html+=`<nav class="nadvar" id="nadvar">`;
 html+=`<ul>`;
 let paginas = [
-    {url: "Acceso/accesoUsuario.html", descripcion:"Acceder" },
+    {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
     {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
     {url: "Adopcion/adopcion.html", descripcion:"Adopcion" },
     {url: "Acerca/acerca.html", descripcion:"Acerca de" }
@@ -36,19 +36,13 @@ html+=`</header>`;
 html+=`<section class="seccion-formulario">`;
 html+=`<div class="contenedor-formulario">`;
 html+=`<form method="post">`;
-html+=`<h2>Regístrese Aquí</h2><br>`;
-html+=`<label for="nombres">Nombres</label><br>`;
-html+=`<input type="text" name="nombres" id="nombres"><br><br>`;
-html+=`<label for="apellidos">Apellidos</label><br>`;
-html+=`<input type="text" name="apellidos" id="apellidos"><br><br>`;
+html+=`<h2>Iniciar Sesion</h2><br>`;
 html+=`<label for="correo">Correo electronico</label><br>`;
 html+=`<input type="email" name="correo" id="correo"><br><br>`;
-html+=`<label for="fechanacimiento">Fecha de nacimiento</label><br>`;
-html+=`<input type="date" name="fechanacimiento" id="fechanacimiento"><br><br>`;
-html+=`<label for="pass">Contraseña</label><br>`;
+html+=`<label for="pass">Contraseña</label>`;
 html+=`<input type="password" name="pass" id="pass"><br><br>`;
 html+=`</form>`;
-html+=`<button class="guardar">Enviar</button>`;
+html+=`<button class="acceder">Acceder</button><br>`;
 html+=`<button class="regresar">Atras</button>`;
 html+=`</div>`;
 html+=`</section>`;
@@ -67,9 +61,19 @@ botones2.forEach(boton => {
   })  
 })
 
-let botones = document.querySelectorAll('.guardar');
+let botones = document.querySelectorAll('.acceder');
 botones.forEach(boton => {
   boton.addEventListener('click', ()=>{
-    alert(`Guardando datos...`);
+    if(correo.value=="12345@gmail.com" && pass.value=="12345"){
+        alert(`Sesion iniciada. Bienvenido Usuario! :D`);
+        window.location.href = "../Iniciada/iniciada.html";
+    }
+    else if(correo.value=="admi@admi" && pass.value=="54321"){
+        alert(`Sesion iniciada. Bienvenido Administrador!`);
+        window.location.href = "../Administracion/administracion.html";
+    }
+    else{
+        alert(`Datos incorrectos. Vuelva a intentarlo...`);
+    }
   })  
 })
