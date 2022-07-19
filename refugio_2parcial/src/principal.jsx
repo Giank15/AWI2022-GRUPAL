@@ -1,37 +1,21 @@
-import React from 'react';
+import { useState } from 'react';
 //import { useHistory } from "react-router-dom";
 //Importar imagenes
-import logo from './images/logoperrito.png';
-import imagen1 from"./images/ref1.jpg";
-import imagen2 from"./images/red2.jpg";
-import imagen3 from"./images/ref3.jpg";
-import imagen4 from"./images/ref4.jpg";
-import imagen5 from"./images/ref5.jpg";
-import imagen6 from"./images/ref6.jpg";
+import logo from './images/logoperrito.png'
+import imagen1 from"./images/ref1.jpg"
+import imagen2 from"./images/red2.jpg"
+import imagen3 from"./images/ref3.jpg"
+import imagen4 from"./images/ref4.jpg"
+import imagen5 from"./images/ref5.jpg"
+import imagen6 from"./images/ref6.jpg"
 
-/*import './styles/principal.css';
+import './styles/principal.css'
 
-const history = useHistory();
+/*const history = useHistory();
   
 const handleRoute = () =>{ 
   history.push("/about");
 };*/
-
-let html = '';
-let paginas = [
-  {url: "Acceso/accesoUsuario.html", descripcion:"Acceder" },
-  {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
-  {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
-  {url: "Adopcion/adopcion.html", descripcion:"Adopcion" },
-  {url: "Acerca/acerca.html", descripcion:"Acerca de" }
-]
-
-for (let elemento of paginas){
-  html+=`<li>`;
-  html+=`<a href="./pages/${elemento.url}">${elemento.descripcion}</a>`;
-  html+=`</li>`;
-}
-opMenu.innerHTML = html;
 
 function Principal() {
 
@@ -110,6 +94,22 @@ function Principal() {
       </footer>
     </div>
   )
-};
+}
 
 export default Principal
+
+//let html = ''
+let paginas = [
+  {url: "Acceso/accesoUsuario.html", descripcion:"Acceder" },
+  {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
+  {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
+  {url: "Adopcion/adopcion.html", descripcion:"Adopcion" },
+  {url: "Acerca/acerca.html", descripcion:"Acerca de" }
+]
+
+/*for (let elemento of paginas){
+  html+=`<li>`;
+  html+=`<a href="./pages/${elemento.url}">${elemento.descripcion}</a>`;
+  html+=`</li>`;
+}
+opMenu.innerHTML = html;*/
