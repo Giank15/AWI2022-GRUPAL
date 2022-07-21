@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 //import { Link } from "react-router-dom"
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 //Importar imagenes
 import logo from './images/logoperrito.png'
@@ -12,18 +14,14 @@ import imagen6 from './images/ref6.jpg'
 
 import './styles/principal.css'
 
-/*const history = useHistory();
-  
-const handleRoute = () =>{ 
-  history.push("/about");
-};*/
 
 function Principal() {
 
   useEffect(()=> {
     let html = ''
+
     let paginas = [
-      {url: "accesoUsuario.jsx", descripcion:"Acceder" },
+      {url: "/accesoUsuario.jsx", descripcion:"Acceder" },
       {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
       {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
       {url: "Adopcion/adopcion.html", descripcion:"Adopcion" },
@@ -32,11 +30,14 @@ function Principal() {
 
     for (let elemento of paginas){
       html+=`<li>`;
-      html+=`<a href="./${elemento.url}">${elemento.descripcion}</a>`;
+      html+=`<a href="${elemento.url}">${elemento.descripcion}</a>`;
       html+=`</li>`;
     }
     opMenu.innerHTML = html;
   });
+
+  let history = useNavigate();
+
 
   return (
     <div className="principal">
@@ -117,4 +118,4 @@ function Principal() {
 
 export default Principal
 
-//op.appendChield(listado);
+
