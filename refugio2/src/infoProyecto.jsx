@@ -3,6 +3,45 @@ import './style.css'
 let html = ``;
 
 function infoProyecto(){
+
+    useEffect(()=> {
+        let html = ''
+        let paginas = [
+            {url: "../index.html", descripcion:"Pagina Principal" },
+            {url: "Acceso/accesoUsuario.html", descripcion:"Acceder" },
+            {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
+            {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
+            {url: "Acerca/acerca.html", descripcion:"Acerca de" }
+        ]
+        for (let elemento of paginas)
+        {
+            html+=`<li>`;
+            html+=`<a href="../${elemento.url}">${elemento.descripcion}</a>`;
+            html+=`</li>`;
+        }
+        opMenu.innerHTML = html;
+        grid_refugio.innerHTML=html1;
+    });
+
+    useEffect(()=> {
+
+        let html = ''
+        let paginas = [
+            {url: "../index.html", descripcion:"Pagina Principal" },
+            {url: "Acceso/accesoUsuario.html", descripcion:"Acceder" },
+            {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
+            {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
+            {url: "Acerca/acerca.html", descripcion:"Acerca de" }
+        ]
+        for (let elemento of paginas)
+        {
+            <li>
+            <a href="../${elemento.url}">${elemento.descripcion}</a>
+            </li>
+        }
+
+    });
+
     return (
         <div className='infoProyecto'>
             <header className="header">
@@ -18,19 +57,7 @@ function infoProyecto(){
             
                 <nav class="nadvar" id="nadvar">
                     <ul>
-                        let paginas = [
-                            {url: "../index.html", descripcion:"Pagina Principal" },
-                            {url: "Acceso/accesoUsuario.html", descripcion:"Acceder" },
-                            {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
-                            {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
-                            {url: "Acerca/acerca.html", descripcion:"Acerca de" }
-                        ]
-                        for (let elemento of paginas)
-                        {
-                            <li>
-                            <a href="../${elemento.url}">${elemento.descripcion}</a>
-                            </li>
-                        }
+                        
                     </ul>
                 </nav>
             </header>
@@ -87,10 +114,12 @@ function infoProyecto(){
                 <p>Aplicaciones Web 1</p>
                 <p>Designed with by <a href="#">Estudiantes de 5to A</a></p>
             </footer>
-            ---
-            --
+            
+            
         </div>
 
         
     )
 }
+
+export default infoProyecto

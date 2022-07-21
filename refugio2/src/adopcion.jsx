@@ -48,7 +48,7 @@ function Adopcion (){
           html+=`</li>`;
         }
         opMenu.innerHTML = html;
-      });
+    });
 
     return(
         <div className='adopcion'>
