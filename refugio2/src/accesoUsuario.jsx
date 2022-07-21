@@ -1,8 +1,14 @@
-
+import { useNavigate } from 'react-router-dom'
 import './styles/accesoUsuario.css'
 
 function Acceso() {
-    
+  
+  const navigate = useNavigate();
+
+  const handleAtras = ()=>{
+    navigate("/");
+  }
+
   return (
     <div className="acceso">
       <header class="header">
@@ -31,7 +37,7 @@ function Acceso() {
       <input type="password" name="pass" id="pass"></input><br></br>
       </form>
       <button class="acceder">Acceder</button><br></br>
-      <button class="regresar">Atras</button>
+      <button class="regresar" onClick={handleAtras}>Atras</button>
       </div>
       </section>
       <footer class="footer">
@@ -51,18 +57,6 @@ export default Acceso
     {url: "Adopcion/adopcion.html", descripcion:"Adopcion" },
     {url: "Acerca/acerca.html", descripcion:"Acerca de" }
 ]
-for (let elemento of paginas)
-{
-    html+=`<li>`;
-    html+=`<a href="../${elemento.url}">${elemento.descripcion}</a>`;
-    html+=`</li>`;
-}
-let botones2 = document.querySelectorAll('.regresar');
-botones2.forEach(boton => {
-  boton.addEventListener('click', ()=>{
-    window.location.href = "../../index.html";
-  })  
-})
 
 let botones = document.querySelectorAll('.acceder');
 botones.forEach(boton => {
