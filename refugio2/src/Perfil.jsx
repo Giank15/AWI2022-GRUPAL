@@ -44,10 +44,7 @@ function Perfil (){
               </ul>
             </nav>
           </header>
-            <div class="Contenido-multimedia">
-              <div class="carrucel-imagenes">
-            </div>
-            </div>
+        
             <section class="seccion-formulario">
               <div class="contenedor-formulario">
                   <h2>Datos de usuario</h2><br></br>
