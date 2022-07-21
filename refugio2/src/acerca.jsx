@@ -2,10 +2,11 @@ import { useEffect } from 'react';
 
 import logo from './images/logoperrito.png'
 
-import './styles/acerca.css'
+//import './styles/estilos1.css'
+//import './styles/estilos2.css'
 
 function Acerca (){
-      useEffect(()=>{
+      /*useEffect(()=>{
         let html = ''
         let paginas = [
             {url: "./index.html", descripcion:"Pagina Principal" },
@@ -16,7 +17,7 @@ function Acerca (){
             html+=`<a href="./${elemento.url}">${elemento.descripcion}</a>`
             html+=`</li>`
             } 
-      });
+      });*/
   return(
       <div className='acerca'>
           <header className="header">

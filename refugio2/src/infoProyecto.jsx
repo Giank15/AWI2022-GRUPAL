@@ -1,10 +1,9 @@
-import './style.css'
+import { useEffect } from 'react';
+import './styles/info.css'
 
-let html = ``;
+function Info(){
 
-function infoProyecto(){
-
-    useEffect(()=> {
+    /*useEffect(()=> {
         let html = ''
         let paginas = [
             {url: "../index.html", descripcion:"Pagina Principal" },
@@ -19,9 +18,9 @@ function infoProyecto(){
             html+=`<a href="../${elemento.url}">${elemento.descripcion}</a>`;
             html+=`</li>`;
         }
-        nadvar.innerHTML = html;
+        opMenu.innerHTML = html;
         
-    });
+    });*/
 
 
     return (
@@ -34,11 +33,11 @@ function infoProyecto(){
                     <div className="contenedor-letras-logo">
                             <><h1>Gigi Animal Shelter</h1><p>Rescate y adopción de animalitos</p></>
                     </div>
-                        <i className="list material-icons bar-active" onclick="barActive()">list</i>
+                    <i className="list material-icons bar-active" onclick="barActive()">list</i>
                 </div>
             
                 <nav class="nadvar" id="nadvar">
-                    <ul>
+                    <ul id='opMenu'>
                         
                     </ul>
                 </nav>
@@ -104,4 +103,4 @@ function infoProyecto(){
     )
 }
 
-export default infoProyecto
+export default Info

@@ -1,4 +1,4 @@
-
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 //Importar imagenes
 import logo from './images/logoperrito.png'
 import imagen1 from './images/ref1.jpg'
@@ -13,7 +13,7 @@ import './styles/iniciada.css'
 
 function Iniciada() {
   
-  useEffect(()=> {
+  /*useEffect(()=> {
     //let html = ''
 
     let paginas = [
@@ -30,7 +30,7 @@ function Iniciada() {
       html+=`</li>`;
     }
     opMenu.innerHTML = html;
-  });
+  });*/
 
   return (
     <div className="Iniciada">
@@ -49,9 +49,8 @@ function Iniciada() {
         <nav class="nadvar" id="nadvar">
           <ul id='opMenu'>
             <li>
-            <Link to={'/acceso'}>Acceso</Link>
+            <Link to={'/'}>Cerrar Sesión</Link>
             </li>
-            
           </ul>
         </nav>
       </header>

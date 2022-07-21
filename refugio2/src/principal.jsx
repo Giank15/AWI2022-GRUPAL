@@ -56,6 +56,15 @@ function Principal() {
             <li>
             <Link to={'/registro'}>Registro</Link>
             </li>
+            <li>
+            <Link to={'/info'}>Información</Link>
+            </li>
+            <li>
+            <Link to={'/adopcion'}>Adopción</Link>
+            </li>
+            <li>
+            <Link to={'/acerca'}>Acerca de</Link>
+            </li>
           </ul>
         </nav>
       </header>
