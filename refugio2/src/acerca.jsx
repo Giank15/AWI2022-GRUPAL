@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import logo from './images/logoperrito.png'
 
-import './styles/principal.css'
+import './styles/acerca.css'
 
 function Acerca (){
       useEffect(()=>{

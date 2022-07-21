@@ -1,6 +1,4 @@
-//Importar hook
-import { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+
 //Importar imagenes
 import logo from './images/logoperrito.png'
 import imagen1 from './images/ref1.jpg'
@@ -10,7 +8,7 @@ import imagen4 from './images/ref4.jpg'
 import imagen5 from './images/ref5.jpg'
 import imagen6 from './images/ref6.jpg'
 //Importar estilo
-import './styles/principal.css'
+import './styles/iniciada.css'
 
 
 function Iniciada() {
@@ -35,7 +33,7 @@ function Iniciada() {
   });
 
   return (
-    <div className="principal">
+    <div className="Iniciada">
       <header className="header">
         {/*Log de Header*/}
         <div className="logo">
