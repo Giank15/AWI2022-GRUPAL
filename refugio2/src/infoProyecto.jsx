@@ -19,28 +19,10 @@ function infoProyecto(){
             html+=`<a href="../${elemento.url}">${elemento.descripcion}</a>`;
             html+=`</li>`;
         }
-        opMenu.innerHTML = html;
-        grid_refugio.innerHTML=html1;
+        nadvar.innerHTML = html;
+        
     });
 
-    useEffect(()=> {
-
-        let html = ''
-        let paginas = [
-            {url: "../index.html", descripcion:"Pagina Principal" },
-            {url: "Acceso/accesoUsuario.html", descripcion:"Acceder" },
-            {url: "Registro/registroUsuario.html", descripcion:"Registrase" },
-            {url: "Informacion/infoProyecto.html", descripcion:"Informacion" },
-            {url: "Acerca/acerca.html", descripcion:"Acerca de" }
-        ]
-        for (let elemento of paginas)
-        {
-            <li>
-            <a href="../${elemento.url}">${elemento.descripcion}</a>
-            </li>
-        }
-
-    });
 
     return (
         <div className='infoProyecto'>
